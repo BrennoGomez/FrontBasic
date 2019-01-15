@@ -1,0 +1,29 @@
+p{
+    color: crimson;
+}
+
+table {
+    color: black;
+    border: solid 1px;
+
+}
+
+.title {
+    text-align: center;
+    color: darkblue;
+    background-color: cornsilk;
+    padding: 5px;
+    margin: 20px;
+}
+
+.img-center {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row
+}
+
+td {
+    color: black;
+    border: solid 1px;
+}
