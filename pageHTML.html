@@ -2,14 +2,62 @@
 <html>
 
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+	 crossorigin="anonymous">
 	<link rel="stylesheet" href="style.css">
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+	 crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+	 crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+	 crossorigin="anonymous"></script>
 
 	<title>Exercício HTML</title>
 </head>
 
 <body>
+
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" href="#">Front-End</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+		 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="https://www.unifacisa.edu.br/">Site da UniFacisa</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+					 aria-haspopup="true" aria-expanded="false">
+						Sites úteis
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="https://www.instagram.com/bgformen">Página da BG FOR MEN</a>
+						<a class="dropdown-item" href="https://www.linkedin.com/in/brenogomes23/">LinkedIn de Breno Gomes</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="https://www.google.com">Pesquise qualquer coisa aqui</a>
+					</div>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Caminho desabilitado</a>
+				</li>
+			</ul>
+			<form class="form-inline my-2 my-lg-0">
+				<input class="form-control mr-sm-2" type="search" placeholder="O que você procura?" aria-label="Search">
+				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+			</form>
+		</div>
+	</nav>
+
 	<h1 class="title">HTML Básico</h1>
 	<h5>Breno Gomes</h5>
 
@@ -48,10 +96,222 @@
 	</p>
 
 	<div class="img-center">
-		<img width="300px" src="https://turizmus.com/html/data/cikk/115/8799/cikk_1158799/google.png" alt="google"/>
+		<img width="300px" src="https://turizmus.com/html/data/cikk/115/8799/cikk_1158799/google.png" alt="google" />
 	</div>
-	
 
+	<h2>Links</h2>
+	<h3>Alvo</h3>
+	<p>Define <a href="https://www.unifacisa.edu.br/">hyperlink</a>
+		para outra página. </br>
+		Podendo <a href="https://www.unifacisa.edu.br/" target="_blank">
+			abrir em outra aba </a>
+	</p>
+	<h3>Âncora </h3>
+	<a id="a" name="link_ancora">Link que define destino na página.</a>
+
+	<h2>Criando um modal com Bootstrap</h2>
+
+	<section>
+
+		<!-- Button trigger modal -->
+		<button id="btn" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+			Enviar dados
+		</button>
+
+		<!-- Modal -->
+		<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+		 aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalCenterTitle">Deseja enviar dados?</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						Ao enviar os dados, você está de acordo com a nossa política.
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+						<button type="button" class="btn btn-primary">Enviar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<div id="div" class="alert alert-primary" role="alert">Esse link <a href="https://www.unifacisa.edu.br/" class="alert-link">aqui</a>
+		te redireciona para o site da UniFacisa. Isso foi feito com Bootstrap! :)</div>
+	<div>
+		<h1>Lorem Ipsum Text</h1>
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus a dolorum exercitationem mollitia est expedita!
+			Quibusdam aut officiis numquam amet distinctio id nulla eaque minima quae, nesciunt, quidem doloremque iste.
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus a dolorum exercitationem mollitia est expedita!
+			Quibusdam aut officiis numquam amet distinctio id nulla eaque minima quae, nesciunt, quidem doloremque iste.
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus a dolorum exercitationem mollitia est expedita!
+			Quibusdam aut officiis numquam amet distinctio id nulla eaque minima quae, nesciunt, quidem doloremque iste.
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus a dolorum exercitationem mollitia est expedita!
+			Quibusdam aut officiis numquam amet distinctio id nulla eaque minima quae, nesciunt, quidem doloremque iste.
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus a dolorum exercitationem mollitia est expedita!
+			Quibusdam aut officiis numquam amet distinctio id nulla eaque minima quae, nesciunt, quidem doloremque iste.
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus a dolorum exercitationem mollitia est expedita!
+			Quibusdam aut officiis numquam amet distinctio id nulla eaque minima quae, nesciunt, quidem doloremque iste.
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus a dolorum exercitationem mollitia est expedita!
+			Quibusdam aut officiis numquam amet distinctio id nulla eaque minima quae, nesciunt, quidem doloremque iste.
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus a dolorum exercitationem mollitia est expedita!
+			Quibusdam aut officiis numquam amet distinctio id nulla eaque minima quae, nesciunt, quidem doloremque iste.
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus a dolorum exercitationem mollitia est expedita!
+			Quibusdam aut officiis numquam amet distinctio id nulla eaque minima quae, nesciunt, quidem doloremque iste.
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus a dolorum exercitationem mollitia est expedita!
+			Quibusdam aut officiis numquam amet distinctio id nulla eaque minima quae, nesciunt, quidem doloremque iste.
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus a dolorum exercitationem mollitia est expedita!
+			Quibusdam aut officiis numquam amet distinctio id nulla eaque minima quae, nesciunt, quidem doloremque iste.
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus a dolorum exercitationem mollitia est expedita!
+			Quibusdam aut officiis numquam amet distinctio id nulla eaque minima quae, nesciunt, quidem doloremque iste.
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus a dolorum exercitationem mollitia est expedita!
+			Quibusdam aut officiis numquam amet distinctio id nulla eaque minima quae, nesciunt, quidem doloremque iste.
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus a dolorum exercitationem mollitia est expedita!
+			Quibusdam aut officiis numquam amet distinctio id nulla eaque minima quae, nesciunt, quidem doloremque iste.
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus a dolorum exercitationem mollitia est expedita!
+			Quibusdam aut officiis numquam amet distinctio id nulla eaque minima quae, nesciunt, quidem doloremque iste.
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus a dolorum exercitationem mollitia est expedita!
+			Quibusdam aut officiis numquam amet distinctio id nulla eaque minima quae, nesciunt, quidem doloremque iste.
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus a dolorum exercitationem mollitia est expedita!
+			Quibusdam aut officiis numquam amet distinctio id nulla eaque minima quae, nesciunt, quidem doloremque iste.
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus a dolorum exercitationem mollitia est expedita!
+			Quibusdam aut officiis numquam amet distinctio id nulla eaque minima quae, nesciunt, quidem doloremque iste.
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus a dolorum exercitationem mollitia est expedita!
+			Quibusdam aut officiis numquam amet distinctio id nulla eaque minima quae, nesciunt, quidem doloremque iste.
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus a dolorum exercitationem mollitia est expedita!
+			Quibusdam aut officiis numquam amet distinctio id nulla eaque minima quae, nesciunt, quidem doloremque iste.
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus a dolorum exercitationem mollitia est expedita!
+			Quibusdam aut officiis numquam amet distinctio id nulla eaque minima quae, nesciunt, quidem doloremque iste.
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus a dolorum exercitationem mollitia est expedita!
+			Quibusdam aut officiis numquam amet distinctio id nulla eaque minima quae, nesciunt, quidem doloremque iste.
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus a dolorum exercitationem mollitia est expedita!
+			Quibusdam aut officiis numquam amet distinctio id nulla eaque minima quae, nesciunt, quidem doloremque iste.
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus a dolorum exercitationem mollitia est expedita!
+			Quibusdam aut officiis numquam amet distinctio id nulla eaque minima quae, nesciunt, quidem doloremque iste.
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus a dolorum exercitationem mollitia est expedita!
+			Quibusdam aut officiis numquam amet distinctio id nulla eaque minima quae, nesciunt, quidem doloremque iste.
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus a dolorum exercitationem mollitia est expedita!
+			Quibusdam aut officiis numquam amet distinctio id nulla eaque minima quae, nesciunt, quidem doloremque iste.
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus a dolorum exercitationem mollitia est expedita!
+			Quibusdam aut officiis numquam amet distinctio id nulla eaque minima quae, nesciunt, quidem doloremque iste.
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus a dolorum exercitationem mollitia est expedita!
+			Quibusdam aut officiis numquam amet distinctio id nulla eaque minima quae, nesciunt, quidem doloremque iste.
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus a dolorum exercitationem mollitia est expedita!
+			Quibusdam aut officiis numquam amet distinctio id nulla eaque minima quae, nesciunt, quidem doloremque iste.
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus a dolorum exercitationem mollitia est expedita!
+			Quibusdam aut officiis numquam amet distinctio id nulla eaque minima quae, nesciunt, quidem doloremque iste.
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus a dolorum exercitationem mollitia est expedita!
+			Quibusdam aut officiis numquam amet distinctio id nulla eaque minima quae, nesciunt, quidem doloremque iste.
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus a dolorum exercitationem mollitia est expedita!
+			Quibusdam aut officiis numquam amet distinctio id nulla eaque minima quae, nesciunt, quidem doloremque iste.
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus a dolorum exercitationem mollitia est expedita!
+			Quibusdam aut officiis numquam amet distinctio id nulla eaque minima quae, nesciunt, quidem doloremque iste.
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus a dolorum exercitationem mollitia est expedita!
+			Quibusdam aut officiis numquam amet distinctio id nulla eaque minima quae, nesciunt, quidem doloremque iste.
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus a dolorum exercitationem mollitia est expedita!
+			Quibusdam aut officiis numquam amet distinctio id nulla eaque minima quae, nesciunt, quidem doloremque iste.
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus a dolorum exercitationem mollitia est expedita!
+			Quibusdam aut officiis numquam amet distinctio id nulla eaque minima quae, nesciunt, quidem doloremque iste.
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus a dolorum exercitationem mollitia est expedita!
+			Quibusdam aut officiis numquam amet distinctio id nulla eaque minima quae, nesciunt, quidem doloremque iste.
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus a dolorum exercitationem mollitia est expedita!
+			Quibusdam aut officiis numquam amet distinctio id nulla eaque minima quae, nesciunt, quidem doloremque iste.
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus a dolorum exercitationem mollitia est expedita!
+			Quibusdam aut officiis numquam amet distinctio id nulla eaque minima quae, nesciunt, quidem doloremque iste.
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus a dolorum exercitationem mollitia est expedita!
+			Quibusdam aut officiis numquam amet distinctio id nulla eaque minima quae, nesciunt, quidem doloremque iste.
+
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus a dolorum exercitationem mollitia est expedita!
+			Quibusdam aut officiis numquam amet distinctio id nulla eaque minima quae, nesciunt, quidem doloremque iste.
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus a dolorum exercitationem mollitia est expedita!
+			Quibusdam aut officiis numquam amet distinctio id nulla eaque minima quae, nesciunt, quidem doloremque iste.
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus a dolorum exercitationem mollitia est expedita!
+			Quibusdam aut officiis numquam amet distinctio id nulla eaque minima quae, nesciunt, quidem doloremque iste.
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus a dolorum exercitationem mollitia est expedita!
+			Quibusdam aut officiis numquam amet distinctio id nulla eaque minima quae, nesciunt, quidem doloremque iste.
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus a dolorum exercitationem mollitia est expedita!
+			Quibusdam aut officiis numquam amet distinctio id nulla eaque minima quae, nesciunt, quidem doloremque iste.
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus a dolorum exercitationem mollitia est expedita!
+			Quibusdam aut officiis numquam amet distinctio id nulla eaque minima quae, nesciunt, quidem doloremque iste.
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus a dolorum exercitationem mollitia est expedita!
+			Quibusdam aut officiis numquam amet distinctio id nulla eaque minima quae, nesciunt, quidem doloremque iste.
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus a dolorum exercitationem mollitia est expedita!
+			Quibusdam aut officiis numquam amet distinctio id nulla eaque minima quae, nesciunt, quidem doloremque iste.
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus a dolorum exercitationem mollitia est expedita!
+			Quibusdam aut officiis numquam amet distinctio id nulla eaque minima quae, nesciunt, quidem doloremque iste.
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus a dolorum exercitationem mollitia est expedita!
+			Quibusdam aut officiis numquam amet distinctio id nulla eaque minima quae, nesciunt, quidem doloremque iste.
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus a dolorum exercitationem mollitia est expedita!
+			Quibusdam aut officiis numquam amet distinctio id nulla eaque minima quae, nesciunt, quidem doloremque iste.
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus a dolorum exercitationem mollitia est expedita!
+			Quibusdam aut officiis numquam amet distinctio id nulla eaque minima quae, nesciunt, quidem doloremque iste.
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus a dolorum exercitationem mollitia est expedita!
+			Quibusdam aut officiis numquam amet distinctio id nulla eaque minima quae, nesciunt, quidem doloremque iste.
+		</p>
+	</div>
 </body>
+
+<a href="pageHTML.html#link_ancora">Link âncora - Este link te redireciona ao ponto especificado.</a>
+
+<!-- Footer -->
+<footer class="bg-light">
+
+	<!-- Footer Links -->
+	<div class="container-fluid text-center text-md-left">
+
+		<!-- Grid row -->
+		<div class="row">
+
+			<!-- Grid column -->
+			<div class="col-md-6 mt-md-0 mt-3">
+
+				<!-- Content -->
+				<h5 class="text-uppercase">Front-End</h5>
+				<p>Treinamento Front-End. 2019</p>
+
+			</div>
+			<!-- Grid column -->
+
+			<hr class="clearfix w-100 d-md-none pb-3">
+
+			<!-- Grid column -->
+			<div class="col-md-3 mb-md-0 mb-3">
+
+				<!-- Links -->
+				<h5 class="text-uppercase">Links úteis</h5>
+
+				<ul class="list-unstyled">
+					<li>
+						<a href="https://www.linkedin.com/in/brenogomes23/">LinkedIn Breno Gomes</a>
+					</li>
+					<li>
+						<a href="https://www.instagram.com/bgformen">Página da BG FOR MEN</a>
+					</li>
+				</ul>
+
+			</div>
+			<!-- Grid column -->
+
+		</div>
+		<!-- Grid row -->
+
+	</div>
+	<!-- Footer Links -->
+
+	<!-- Copyright -->
+	<div class="footer-copyright text-center py-3">© 2019 Copyright:
+		<a href="https://www.linkedin.com/in/brenogomes23/"> Breno Gomes</a>
+	</div>
+	<!-- Copyright -->
+
+</footer>
+<!-- Footer -->
 
 </html>
